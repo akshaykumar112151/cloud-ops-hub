@@ -1,75 +1,141 @@
-<div align="center">
-  <h1><img src="https://project-management-gs.vercel.app/favicon.ico" width="20" height="20" alt="project-management Favicon">
-   project-management</h1>
-  <p>
-    An open-source project management platform built with ReactJS and Tailwind CSS.
-  </p>
-  <p>
-    <a href="https://github.com/GreatStackDev/project-management/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/GreatStackDev/project-management?style=for-the-badge" alt="License"></a>
-    <a href="https://github.com/GreatStackDev/project-management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome"></a>
-    <a href="https://github.com/GreatStackDev/project-management/issues"><img src="https://img.shields.io/github/issues/GreatStackDev/project-management?style=for-the-badge" alt="GitHub issues"></a>
-  </p>
-</div>
+# 🗂️ Cloud Ops Hub
+
+A modern and responsive **Project Management Web Application** built with React.js and Redux Toolkit. Manage your projects, tasks, and team members efficiently from a single dashboard.
+
+![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)
+![React](https://img.shields.io/badge/React-18-blue)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+🔗 **Live Demo:** [cloud-ops-hub.netlify.app](https://cloud-ops-hub.netlify.app)
+📁 **GitHub:** [github.com/akshaykumar12151/cloud-ops-hub](https://github.com/akshaykumar12151/cloud-ops-hub)
 
 ---
 
-## 📖 Table of Contents
+## 📌 Table of Contents
 
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#-tech-stack)
-- [🚀 Getting Started](#-getting-started)
-- [🤝 Contributing](#-contributing)
-- [📜 License](#-license)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Screenshots](#-screenshots)
+- [License](#-license)
 
 ---
 
-## 📝 Features <a name="-features"></a>
+## ✨ Features
 
-- **Multiple Workspaces:** Allow multiple workspaces to be created, each with its own set of projects, tasks, and members.
-- **Project Management:** Manage projects, tasks, and team members.
-- **Analytics:** View project analytics, including progress, completion rate, and team size.
-- **Task Management:** Assign tasks to team members, set due dates, and track task status.
-- **User Management:** Invite team members, manage user roles, and view user activity.
+- 📊 **Dashboard Overview** — Real-time stats including total projects, completed tasks, and overdue items
+- 📁 **Project Management** — Create and track multiple projects with progress indicators and due dates
+- ✅ **Task Management** — Create tasks with priority levels (High, Medium, Low) and status tracking
+- 👥 **Team Collaboration** — Add and invite team members to projects
+- 🏢 **Multi-Workspace Support** — Switch between multiple workspaces seamlessly
+- 📈 **Project Analytics** — Visual analytics and calendar view for each project
+- 🕐 **Recent Activity Feed** — Track all recent project and task activities
+- 🌙 **Dark / Light Mode** — Toggle between dark and light themes
+- 📱 **Responsive UI** — Clean and modern interface with sidebar navigation
 
-## 🛠️ Tech Stack <a name="-tech-stack"></a>
+---
 
-- **Framework:** ReactJS
-- **Styling:** Tailwind CSS
-- **UI Components:** Lucide React for icons
-- **State Management:** Redux Toolkit
+## 🛠️ Tech Stack
 
-## 🚀 Getting Started <a name="-getting-started"></a>
+| Technology | Purpose |
+|---|---|
+| **React.js 18** | Frontend Framework |
+| **Redux Toolkit** | State Management |
+| **Vite** | Build Tool |
+| **JavaScript (ES6+)** | Programming Language |
+| **CSS** | Styling |
+| **ESLint** | Code Quality |
 
-First, install the dependencies. We recommend using `npm` for this project.
+---
 
+## 📁 Project Structure
+```
+cloud-ops-hub/
+├── public/
+├── src/
+│   ├── app/
+│   │   └── store.js
+│   ├── assets/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── ProjectCard.jsx
+│   │   ├── ProjectTasks.jsx
+│   │   ├── ProjectAnalytics.jsx
+│   │   ├── ProjectCalendar.jsx
+│   │   ├── CreateTaskDialog.jsx
+│   │   ├── CreateProjectDialog.jsx
+│   │   ├── MyTasksSidebar.jsx
+│   │   ├── RecentActivity.jsx
+│   │   ├── StatsGrid.jsx
+│   │   └── ...more
+│   ├── features/
+│   │   ├── themeSlice.js
+│   │   └── workspaceSlice.js
+│   ├── pages/
+│   │   ├── Dashboard.jsx
+│   │   ├── Projects.jsx
+│   │   ├── ProjectDetails.jsx
+│   │   ├── TaskDetails.jsx
+│   │   └── Team.jsx
+│   ├── App.jsx
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/akshaykumar12151/cloud-ops-hub.git
+```
+
+2. **Go to project directory**
+```bash
+cd cloud-ops-hub
+```
+
+3. **Install dependencies**
 ```bash
 npm install
 ```
 
-Then, run the development server:
-
+4. **Run development server**
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
-
-You can start editing the page by modifying `src/App.jsx`. The page auto-updates as you edit the file.
-
----
-
-## 🤝 Contributing <a name="-contributing"></a>
-
-We welcome contributions! Please see our [CONTRIBUTING.md](./CONTRIBUTING.md) for more details on how to get started.
+5. **Open in browser**
+```
+http://localhost:5173
+```
 
 ---
 
-## 📜 License <a name="-license"></a>
+## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE.md](./LICENSE.md) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE.md](LICENSE.md) file for details.
+
+---
+
+## 👨‍💻 Author
+
+**Akshay Kumar**
+- GitHub: [@akshaykumar12151](https://github.com/akshaykumar12151)
+
+---
+
+⭐ **Agar project pasand aaya toh star dena mat bhoolo!** ⭐
