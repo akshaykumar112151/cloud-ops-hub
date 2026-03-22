@@ -138,4 +138,4 @@ This project is licensed under the **MIT License** — see the [LICENSE.md](LICE
 
 ---
 
-⭐ **Agar project pasand aaya toh star dena mat bhoolo!** ⭐
+⭐ **If you found this project helpful, don't forget to give it a star!** ⭐
